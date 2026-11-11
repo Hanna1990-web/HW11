@@ -1,0 +1,157 @@
+:root {
+  --medium-color: #222222;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+header .container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header nav {
+  margin-left: 306px;
+}
+.logo {
+  color: var(--medium-color);
+font-style: italic;
+font-weight: 700;
+font-size: 24px;
+line-height: 1.25;
+}
+.logo::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: var(--medium-color)
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.hero {
+  position: relative;
+  padding-top: 138px;
+  min-height: 747px;
+  background-color: #f9f6f5;
+ background-image: url(../images/hero.png);
+ background-repeat: no-repeat;
+ background-position: right bottom;
+ background-size: min(55%, 796px) auto;
+}
+nav ul {
+  display: flex;
+  gap: 40px;
+}
+nav a {
+  padding: 40px 0;
+  display: block;
+  color: var(--medium-color);
+  font-size: 16px;
+  line-height: 1.25;
+}
+.external-links {
+  display: flex;
+  gap: 24px;
+  margin-left: 312px;
+}
+.external-links svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: #222;
+  stroke-width: 1.5;
+}
+.hero button svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.hero form {
+  display: flex;
+  align-items: center;
+max-width: 326px;
+margin-top: 24px;
+padding: 8px;
+background-color: #fff;
+}
+.hero input {
+  flex: 1;
+  min-width: 0;
+  padding: 8px;
+  border: 0;
+}
+.hero form button {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  background-color: #402f2c;
+  color: #fff;
+}
+.hero form button svg {
+display: block;
+width: 16px;
+height: 16px;
+fill: currentColor;
+}
+.shop-button {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 16px 32px;
+  background-color: #402f2c;
+  color: #fff;
+}
+.hero h1 {
+  max-width: 630px;
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 1.15;
+}
+.hero p {
+  max-width: 510px;
+  margin-top: 24px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+.hero-arrows {
+  position: absolute;
+  left: 48%;
+  bottom: 32px;
+  display: flex;
+  gap: 16px;
+}
+.hero-arrows button {
+  padding: 4px;
+  border: 0;
+  background-color: transparent;
+}
